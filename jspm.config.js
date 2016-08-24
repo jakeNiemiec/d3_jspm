@@ -2,7 +2,7 @@ SystemJS.config({
   paths: {
     "npm:": "jspm_packages/npm/",
     "github:": "jspm_packages/github/",
-    "app/": "src/"
+    "jspm_d3/": "src/"
   },
   devConfig: {
     "map": {
@@ -11,8 +11,8 @@ SystemJS.config({
   },
   transpiler: "plugin-babel",
   packages: {
-    "app": {
-      "main": "app.js",
+    "jspm_d3": {
+      "main": "index.js",
       "meta": {
         "*.js": {
           "loader": "plugin-babel"

@@ -1,14 +1,20 @@
 {
+	"name":"jspm_d3",
   "scripts": {
-    "start": "lite-server",
-    "postinstall": "jspm i"
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "lite:d": "lite-server -c dist/distConfig.json",
+    "postinstall": "jspm i",
+    "clean-sweep": "jspm clean && rm -r jspm_packages node_modules && npm i",
+		"build": "jspm build jspm_d3 dist/jspm_d3-dist.js --minify && git add dist/jspm_d3-dist.js dist/jspm_d3-dist.js.map"
   },
   "devDependencies": {
     "jspm": "^0.17.0-beta.22",
     "lite-server": "^2.2.2"
   },
+  "main": "src/index.js",
   "jspm": {
-    "name": "app",
+    "name": "jspm_d3",
     "main": "src/index.js",
     "dependencies": {
       "d3-scale": "npm:d3-scale@^1.0.3",
