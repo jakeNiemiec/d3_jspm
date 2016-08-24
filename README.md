@@ -8,7 +8,7 @@ npm i
 npm start
 ```
 
-Open `http://localhost:8080/`
+Open `http://localhost:3000` or `http://localhost:3001`
 
 ###Expected Output
 (in chrome console)
@@ -28,3 +28,6 @@ index.js:9
 index.js:10 
 320
 ```
+##Build & Rollup
+To build & rollup everything into a single script run: 
+`npm run build` and then `npm run lite:d`
