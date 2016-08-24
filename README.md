@@ -1,9 +1,9 @@
-# jspm + Bootstrap Example
+# jspm + D3 Example
 #### Setting Up
 
 Run
 ```shell
-git clone git@github.com:jakeNiemiec/jspm_bootstrap.git
+git clone git@github.com:jakeNiemiec/jspm_d3.git
 npm i
 npm start
 ```
@@ -13,18 +13,18 @@ Open `http://localhost:8080/`
 ###Expected Output
 (in chrome console)
 ```error
-index.js:4 Bootstrap: ( selector, context ) {
+index.js:4 
+scaleLinear: linear() {
+    var scale = continuous(deinterpolate, d3Interpolate.interpolateNumber);
 
-		// The jQuery object is actually just the init constructor 'enhanced'
-		// Need init if jQuery is called (just allow error to be thrown if not included)
-		return ne…
-index.js:5 jQuery aliased as `$` ( selector, context ) {
+    scale.copy = function() {
+      return copy(scale, linear());
+    };
 
-		// The jQuery object is actually just the init constructor 'enhanced'
-		// Need init if jQuery is called (just allow error to be thrown if not included)
-		return ne…
-index.js:6 Test jQuery [body, prevObject: jQuery.fn.init[1], context: document, selector: "body"]0: bodycontext: documentlength: 1prevObject: jQuery.fn.init[1]selector: "body"__proto__: Object[0]
+    return linearish(scale);
+…
+index.js:9 
+80
+index.js:10 
+320
 ```
-
-
-Thanks to @DavidStrada for [this repo](https://github.com/DavidStrada/bootstrap4_jspm_cli_v0.17.0-beta.17)

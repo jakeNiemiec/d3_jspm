@@ -11,47 +11,10 @@
     "name": "app",
     "main": "src/index.js",
     "dependencies": {
-      "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2"
+      "d3-scale": "npm:d3-scale@^1.0.3"
     },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.12"
-    },
-    "overrides": {
-      "github:HubSpot/tether@1.3.2": {
-        "main": "js/tether",
-        "directories": {
-          "lib": "dist"
-        },
-        "meta": {
-          "js/tether.js": {
-            "exports": "Tether",
-            "format": "global"
-          }
-        }
-      },
-      "github:twbs/bootstrap@4.0.0-alpha.2": {
-        "directories": {
-          "lib": "."
-        },
-        "main": "dist/js/bootstrap",
-        "dependencies": {
-          "jquery": "npm:jquery@2.2.4",
-          "tether": "github:HubSpot/tether@^1.1.1"
-        },
-        "meta": {
-          "dist/js/bootstrap.js": {
-            "deps": [
-              "jquery",
-              "tether"
-            ],
-            "exports": "$",
-            "format": "global"
-          }
-        }
-      },
-      "npm:jquery@2.2.4": {
-        "format": "amd"
-      }
     }
   }
 }

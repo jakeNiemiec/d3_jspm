@@ -1,6 +1,10 @@
 
-import bootstrap from "bootstrap";
+import {scaleLinear} from "d3-scale";
 
-console.log("Bootstrap:",bootstrap);
-console.log("jQuery aliased as `$`",$);
-console.log("Test jQuery",$('body'));
+console.log("scaleLinear:",scaleLinear);
+var x = scaleLinear()
+	.domain([10, 130])
+	.range([0, 960]);
+
+console.log(x(20)); // 80
+console.log(x(50)); // 320

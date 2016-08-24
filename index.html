@@ -5,8 +5,22 @@
   <title>boostrap</title>
 </head>
 <body>
-  <h1>Boostrap</h1>
-  Open your console.
+  <h1>D3_scale</h1>
+  Open your console, it should say:
+  <code><br/><br/>
+    scaleLinear: linear() {<br/>
+    var scale = continuous(deinterpolate, d3Interpolate.interpolateNumber);<br/>
+  <br/>
+    scale.copy = function() {<br/>
+    return copy(scale, linear());<br/>
+    };<br/>
+  <br/>
+    return linearish(scale);<br/>
+    …<br/>
+    <br/><br/>
+    index.js:9 80<br/>
+    index.js:10 320<br/>
+  </code>
     <script src="jspm_packages/system.js"></script>
   <script src="jspm.config.js"></script>
   <script>

@@ -29,13 +29,28 @@ SystemJS.config({
     "github:*/*.json"
   ],
   map: {
-    "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2"
+    "d3-scale": "npm:d3-scale@1.0.3"
   },
   packages: {
-    "github:twbs/bootstrap@4.0.0-alpha.2": {
+    "npm:d3-scale@1.0.3": {
       "map": {
-        "jquery": "npm:jquery@2.2.4",
-        "tether": "github:HubSpot/tether@1.3.2"
+        "d3-time-format": "npm:d3-time-format@2.0.2",
+        "d3-interpolate": "npm:d3-interpolate@1.1.1",
+        "d3-collection": "npm:d3-collection@1.0.1",
+        "d3-format": "npm:d3-format@1.0.2",
+        "d3-color": "npm:d3-color@1.0.1",
+        "d3-time": "npm:d3-time@1.0.2",
+        "d3-array": "npm:d3-array@1.0.1"
+      }
+    },
+    "npm:d3-time-format@2.0.2": {
+      "map": {
+        "d3-time": "npm:d3-time@1.0.2"
+      }
+    },
+    "npm:d3-interpolate@1.1.1": {
+      "map": {
+        "d3-color": "npm:d3-color@1.0.1"
       }
     }
   }
