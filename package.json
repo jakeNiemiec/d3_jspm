@@ -11,7 +11,9 @@
     "name": "app",
     "main": "src/index.js",
     "dependencies": {
-      "d3-scale": "npm:d3-scale@^1.0.3"
+      "d3-scale": "npm:d3-scale@^1.0.3",
+      "d3-selection": "npm:d3-selection@^1.0.2",
+      "d3-selection-multi": "npm:d3-selection-multi@^1.0.0"
     },
     "devDependencies": {
       "plugin-babel": "npm:systemjs-plugin-babel@^0.0.12"
