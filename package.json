@@ -1,5 +1,5 @@
 {
-	"name":"jspm_d3",
+  "name":"jspm_d3",
   "scripts": {
     "start": "npm run lite",
     "lite": "lite-server",
